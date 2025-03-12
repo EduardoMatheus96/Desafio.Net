@@ -19,8 +19,4 @@
     <ProjectReference Include="..\Resolve.Domain.Registrations\Resolve.Domain.Registrations.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
 </Project>
