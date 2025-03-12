@@ -1,10 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace Resolve.Infra.Data.Models;
 
-public partial class OrcamentoDespesa
+public class OrcamentoDespesa
 {
+    //[Key]
+    //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int OrcamentoDespesaId { get; set; }
 
     public int Codigo { get; set; }
@@ -24,4 +26,6 @@ public partial class OrcamentoDespesa
     public int? FonteRecurso { get; set; }
 
     public int? Numero { get; set; }
+
+    public OrcamentoDespesa() { }
 }

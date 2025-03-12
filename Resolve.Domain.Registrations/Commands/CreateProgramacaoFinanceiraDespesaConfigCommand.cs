@@ -1,7 +1,10 @@
-﻿namespace Resolve.Api.Dtos
+﻿using Resolve.Domain.Core.Command;
+
+namespace Resolve.Domain.Registrations.Commands.ProgramacaoFinanceiraDespesaConfig
 {
-    public class CreateProgramacaoFinanceiraDespesaConfigDto
+    public class CreateProgramacaoFinanceiraDespesaConfigCommand : BaseCommand
     {
+        public int ProgramacaoFinanceiraDespesaConfigId { get; set; }
         public short Ano { get; set; }
         public int UnidadeGestoraIdfk { get; set; }
         public decimal Mes01Perc { get; set; }

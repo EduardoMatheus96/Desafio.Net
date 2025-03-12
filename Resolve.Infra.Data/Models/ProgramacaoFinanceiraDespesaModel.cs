@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Resolve.Infra.Data.Models;
 
-public partial class ProgramacaoFinanceiraDespesaConfig
+public partial class ProgramacaoFinanceiraDespesaModel
 {
     public int ProgramacaoFinanceiraDespesaConfigId { get; set; }
 
@@ -34,4 +34,5 @@ public partial class ProgramacaoFinanceiraDespesaConfig
     public decimal Mes11Perc { get; set; }
 
     public decimal Mes12Perc { get; set; }
+
 }

@@ -13,13 +13,13 @@ namespace Resolve.Infra.Core.API.Controller
 {
     public class BaseController : ControllerBase, IDisposable
     {
-        protected readonly IMediatorHandler bus;
+        protected readonly IMediatorHandler Bus;
         readonly DomainNotificationHandler _notifications;
         readonly TelemetryClient _telemetry = new TelemetryClient();
 
         public BaseController(INotificationHandler<DomainNotification> notifications, IMediatorHandler bus)
         {
-            this.bus = bus;
+            Bus = bus;
             _notifications = (DomainNotificationHandler)notifications;
         }
 
