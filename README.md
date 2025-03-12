@@ -103,25 +103,6 @@ Para acessar endpoints protegidos, siga os passos:
 
 ---
 
-## ▶️ Execução
-
-Para rodar a API localmente:
-```sh
- dotnet run
-```
-A API estará disponível em:
-```
-https://localhost:7011
-```
-
-Para rodar via Docker:
-```sh
-docker build -t programacao-financeira-api .
-docker run -p 7011:7011 programacao-financeira-api
-```
-
----
-
 ## 📑 Swagger e Documentação
 
 A documentação da API está disponível no **Swagger**:
